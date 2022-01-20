@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const name = ["sd","jd","ss"];
+        console.log(name);
+        console.log(name[0]);
+
+        //array methods
+        //tostring
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.toString());
+
+        //pop
+        console.log(fruits.pop());
+
+        //push
+        console.log(fruits.push("Kiwi"));
+
+        //unshift
+        console.log(fruits.unshift("Lemon"));
+
+        //length
+        console.log(fruits.length);
+
+        //merge
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+
+        console.log(myGirls.concat(myBoys));
+
+        //sorting
+        console.log(fruits.sort());
+
+        //reverse
+        console.log(fruits.reverse());
+        
+        //foreach
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        console.log(txt);
+        function myFunction(value, index, array) {
+        txt += value + "<br>"; 
+        }
+
+        //map
+
+        const numbers1 = [45, 4, 9, 16, 25];
+        const numbers2 = numbers1.map(myFunction);
+        console.log(numbers2);
+        function myFunction(value, index, array) {
+        return value * 2;
+} 
+
+      //filter
+
+      const numbers5 = [45, 4, 9, 16, 25];
+        const over18 = numbers5.filter(myFunction3);
+
+        function myFunction3(value, index, array) {
+        return value > 18;
+}
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body>
+    <h2>const array</h2>
+    <p id="demo"></p>
+
+    <h2>Object</h2>
+    <p id="demo1"></p>
+
+    
+    <h2>Object method</h2>
+    <p id="demo2"></p>
+
+    <script>
+        console.log(5 + 6);
+        
+        const name = ["Savan", "tushar", "brij"];
+
+       // Change an element:
+        name[0] = "jaydip";
+
+         // Add an element:
+        name.push("chirag");
+        document.getElementById("demo").innerHTML = name;
+        
+
+        // object
+        const person = {
+            firstName: "savan",
+            lastName: "sangani",
+            age: 21,
+            
+        };
+        
+     // Display some data from the object:
+     document.getElementById("demo1").innerHTML =  person.firstName + " is " + person.age + " years old.";
+
+        const person1 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function() {
+              return this.firstName + " " + this.lastName;
+        }
+    };
+        document.getElementById("demo2").innerHTML = person1.fullName();
+
+
+    </script>
+
+    
+
+
+</body>
+</html>

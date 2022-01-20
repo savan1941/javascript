@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     console.log(text.length); //26
+
+     //string methods
+     let str = "Apple, Banana, Kiwi";
+     console.log(str.slice(13,17));  //, Ki
+     console.log(str.slice(-12,-6)); //Banana
+     console.log(str.slice(7)); //Banana, Kiwi
+
+     //substring
+     console.log(str.substring(13,17)); //, Ki
+
+     //substr
+     console.log(str.substr(7, 6));//Banana
+
+     //replace
+     let text1 = "savan sangani";
+     let newText = text1.replace("sangani", "patel");
+     console.log(newText);  // savan patel
+
+     //concat
+     let tex1 = "savan";
+     let text2 = "sangani";
+     let text3 = tex1.concat(text2);
+     console.log(text3);//savansangani
+
+     //search method
+     let str1 = "Please locate where 'locate' occurs!";
+     console.log( str1.indexOf("locate"));//7
+     console.log(str1.lastIndexOf("John"));//-1
+
+     //match
+     let t = "The rain in SPAIN stays mainly in the plain";
+     console.log(t.match(/ain/g));
+    </script>
+</body>
+</html>
