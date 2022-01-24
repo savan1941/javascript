@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Create a Map
+    const fruits = new Map();
+
+    // Set Map Values
+    fruits.set("apples", 500);
+    fruits.set("bananas", 300);
+    fruits.set("oranges", 200);
+    
+    //get
+    console.log(fruits.get("apples"));
+    console.log(fruits.delete("apples"));
+    console.log(fruits.get("apples"));
+    console.log(fruits.has("apples"));
+
+    //for each
+
+    let text = "";
+    fruits.forEach (function(value, key) {
+        text += key + ' = ' + value + "<br>"
+    })
+
+    console.log(text);
+
+    console.log(typeof fruits);
+
+    // var name = "sd";
+    // f1();
+    // function f1(){
+    //     var name1 = "sss";
+    //     console.log(name);
+    // }
+    // console.log(name1);
+
+    {
+        let s = "wwww";
+    }
+    console.log(s);
+
+    </script>
+</body>
+</html>

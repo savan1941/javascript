@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="this.style.display='none'">Click to Remove Me!</button>
+    <script>
+        
+        
+    const person = {
+        firstName: "sd",
+        lastName: "patel",
+        id: 5566,
+        fullName : function() {
+            console.log(this.firstName + " " + this.lastName);
+            console.log(this);
+  }
+};
+    person.fullName();
+    // console.log(person.fullName());  //sd patel
+    let x = this;
+    console.log(x);
+    
+    function myFunction() {
+            return this;
+    }
+    console.log(myFunction());
+
+    console.log(this);
+
+    const person1 = {
+        firstName  : "John",
+        lastName   : "Doe",
+        id     : 5566,
+        myFunction : function() {
+            console.log(this);
+  }
+};
+    person1.myFunction();
+
+    // let a = 6;
+    function name(){
+        var a=5;
+        console.log(this.a);
+    }
+    name();
+
+    </script>
+</body>
+</html>
